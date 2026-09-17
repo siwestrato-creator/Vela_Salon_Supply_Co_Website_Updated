@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Professional salon and hair beauty equipment in Johannesburg. Browse our collection and order by WhatsApp.">
+<title>Vela Salon Supply Co. | Professional Hair & Beauty Equipment</title>
+<style>
+:root {
+  --ink:#171717; --muted:#6f6f6f; --cream:#f7f4ef; --white:#fff;
+  --accent:#b47a48; --accent-dark:#8d5a32; --line:#e7e1d9;
+  --shadow:0 16px 45px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(1180px,92%);margin:auto}
+.topbar{background:var(--ink);color:#fff;font-size:13px;padding:8px 0;text-align:center}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;min-height:74px;gap:20px}
+.brand{font-family:Georgia,serif;font-size:25px;font-weight:700;letter-spacing:.4px}
+.brand span{color:var(--accent)}
+.nav-links{display:flex;gap:25px;font-size:14px}
+.nav-links a:hover{color:var(--accent-dark)}
+.nav-cta{background:var(--ink);color:#fff;padding:11px 18px;border-radius:999px;font-weight:700;font-size:13px}
+.hero{background:linear-gradient(120deg,#f8f5f0 0%,#fff 58%);padding:82px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:55px}
+.kicker{font-size:12px;text-transform:uppercase;letter-spacing:2.3px;color:var(--accent-dark);font-weight:800}
+h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,70px);line-height:1.02;margin:14px 0 20px;letter-spacing:-1.5px}
+.hero p{font-size:18px;color:var(--muted);max-width:600px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 21px;border-radius:999px;font-weight:800;border:1px solid var(--ink);transition:.2s}
+.btn.primary{background:var(--ink);color:#fff}
+.btn.primary:hover{transform:translateY(-2px);background:#000}
+.btn.secondary{background:#fff}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:18px;box-shadow:var(--shadow);transform:rotate(1deg)}
+.hero-card img{width:100%;height:430px;object-fit:contain;background:#fafafa;border-radius:20px}
+.hero-card .caption{padding:14px 5px 3px;display:flex;justify-content:space-between;gap:15px}
+.hero-card small{color:var(--muted)}
+.section{padding:78px 0}
+.section.alt{background:var(--cream)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:30px}
+.section h2{font-family:Georgia,serif;font-size:40px;line-height:1.1;margin:0 0 8px}
+.section-head p{color:var(--muted);margin:0;max-width:620px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filter{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;cursor:pointer;font-weight:700;font-size:13px}
+.filter.active,.filter:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.product{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.product-media{height:245px;background:#fafafa;display:flex;align-items:center;justify-content:center;padding:15px}
+.product-media img{width:100%;height:100%;object-fit:contain}
+.product-body{padding:17px}
+.tag{font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:var(--accent-dark);font-weight:800}
+.product h3{font-size:16px;line-height:1.35;margin:7px 0 8px}
+.product p{font-size:13px;color:var(--muted);margin:0 0 15px}
+.order-btn{width:100%;border:0;background:var(--ink);color:#fff;border-radius:10px;padding:11px;font-weight:800;cursor:pointer}
+.order-btn:hover{background:var(--accent-dark)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.info-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px}
+.info-card h3{margin-top:0;font-family:Georgia,serif;font-size:26px}
+.list{padding:0;margin:20px 0 0;list-style:none}
+.list li{padding:10px 0;border-bottom:1px solid var(--line)}
+.list li:last-child{border-bottom:0}
+.contact{background:var(--ink);color:#fff}
+.contact .section-head p{color:#c9c9c9}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.contact-card{border:1px solid #383838;border-radius:22px;padding:26px;background:#202020}
+.contact-card h3{margin-top:0;font-family:Georgia,serif;font-size:26px}
+.contact-line{padding:10px 0;border-bottom:1px solid #383838}
+.contact-line:last-child{border-bottom:0}
+.contact .btn.primary{background:#fff;color:var(--ink);border-color:#fff}
+footer{background:#111;color:#999;padding:28px 0;font-size:13px}
+footer .footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.empty{grid-column:1/-1;text-align:center;padding:45px;color:var(--muted)}
+@media(max-width:900px){
+  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-card{max-width:650px;margin:auto}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .nav-links{display:none}
+}
+@media(max-width:560px){
+  .hero{padding-top:55px}
+  .grid{grid-template-columns:1fr}
+  .section{padding:55px 0}
+  .section-head{display:block}
+  .filters{margin-top:18px}
+  .hero-card img{height:320px}
+}
+</style>
+</head>
+<body>
+<div class="topbar">Johannesburg • Professional Hair & Beauty Equipment • Order by WhatsApp</div>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="brand" href="#home">Vela <span>Salon Supply Co.</span></a>
+    <div class="nav-links">
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="https://wa.me/27787412314" target="_blank" rel="noopener">WhatsApp to Order</a>
+  </div>
+</nav>
+
+<main id="home">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">Professional salon essentials</div>
+      <h1>Equipment made for the modern salon.</h1>
+      <p>Explore our collection of professional hair dryers, styling tools, clippers and salon equipment. Browse the products below and contact us on WhatsApp to check availability and place an order.</p>
+      <div class="actions">
+        <a class="btn primary" href="#products">View Products</a>
+        <a class="btn secondary" href="https://wa.me/27787412314" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="images/Hair-Dryer-IQ_Perfetto_Black.jpg" alt="Professional IQ Perfetto hair dryer">
+      <div class="caption"><strong>Featured collection</strong><small>Salon & styling equipment</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="products">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Our collection</div>
+        <h2>Professional products</h2>
+        <p>Selected equipment and accessories for salon professionals and customers looking for quality hair-care tools.</p>
+      </div>
+      <div class="filters" id="filters"></div>
+    </div>
+    <div class="grid" id="productGrid"></div>
+  </div>
+</section>
+
+<section class="section alt" id="about">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="kicker">About Vela</div>
+        <h2>Simple service. Professional equipment.</h2>
+        <p>We are a small Johannesburg-based business focused on making professional salon and hair equipment easy to browse and order.</p>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div class="info-card">
+        <h3>What we offer</h3>
+        <ul class="list">
+          <li>Professional hair dryers and styling tools</li>
+          <li>Salon dryers, steamers and treatment equipment</li>
+          <li>Clippers and barbering equipment</li>
+          <li>Useful salon accessories and attachments</li>
+          <li>WhatsApp ordering for a quick, personal service</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h3>How ordering works</h3>
+        <ul class="list">
+          <li><strong>1.</strong> Browse the collection.</li>
+          <li><strong>2.</strong> Press “Order on WhatsApp” on the product you want.</li>
+          <li><strong>3.</strong> Confirm availability, price and collection/delivery details with us.</li>
+          <li><strong>4.</strong> We arrange your order directly with you.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="kicker" style="color:#d9a97b">Visit or contact us</div>
+        <h2>Let's talk about your order.</h2>
+        <p>For current pricing and availability, contact us directly on WhatsApp.</p>
+      </div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Order by WhatsApp</h3>
+        <div class="contact-line"><strong>WhatsApp:</strong> 078 741 2314</div>
+        <div class="contact-line">Send us the product name or a screenshot and we'll assist you.</div>
+        <br>
+        <a class="btn primary" href="https://wa.me/27787412314" target="_blank" rel="noopener">Open WhatsApp</a>
+      </div>
+      <div class="contact-card">
+        <h3>Our location</h3>
+        <div class="contact-line">3 South Street</div>
+        <div class="contact-line">Lorentzville</div>
+        <div class="contact-line">Johannesburg, 2094</div>
+        <div class="contact-line">South Africa</div>
+        <br>
+        <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=3%20South%20Street%2C%20Lorentzville%2C%20Johannesburg%2C%202094%2C%20South%20Africa" target="_blank" rel="noopener">View on Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© 2026 Vela Salon Supply Co. All rights reserved.</div>
+    <div>Professional hair & beauty equipment • Johannesburg, South Africa</div>
+  </div>
+</footer>
+
+<script>
+const products = [{"image": "images/Brazilian-Gold-THC-Ceramic-T-Flat-Iron.jpg", "name": "Brazilian Gold Ceramic T-Flat Iron", "category": "Styling"}, {"image": "images/Climazone-Infra-Red-5-Head-Stand.jpg", "name": "Climazone Infra-Red 5-Head Stand", "category": "Salon Equipment"}, {"image": "images/Climazone-Rollerball-Wall-Mounted.jpg", "name": "Climazone Rollerball Wall Mounted", "category": "Salon Equipment"}, {"image": "images/Hair-Dryer-IQ_Perfetto_Black.jpg", "name": "IQ Perfetto Professional Hair Dryer", "category": "Hair Dryers"}, {"image": "images/Hair-Dryer-Parlux-2800-Pro.jpg", "name": "Parlux 2800 Professional Hair Dryer", "category": "Hair Dryers"}, {"image": "images/Hair-Hood-Dryer-Wall-Mounted.png", "name": "Wall-Mounted Hood Hair Dryer", "category": "Salon Equipment"}, {"image": "images/Hair-Steamer-on-Stand-Rebalta.jpg", "name": "Rebalta Hair Steamer on Stand", "category": "Salon Equipment"}, {"image": "images/Heat-Curling-Iron-Set-3pcs-with-Glove.jpg", "name": "3-Piece Heat Curling Iron Set with Glove", "category": "Styling"}, {"image": "images/Hooded-Hair-Dryer-2-speed-white.png", "name": "Hooded Hair Dryer – 2 Speed", "category": "Salon Equipment"}, {"image": "images/Hooded-Hair-Dryer-Ionic-3-Speed.jpg", "name": "Ionic Hooded Hair Dryer – 3 Speed", "category": "Salon Equipment"}, {"image": "images/IMG_3526.jpg", "name": "Professional Finger Diffuser", "category": "Accessories"}, {"image": "images/Parlux-Advance-Light-Black.jpg", "name": "Parlux Advance Light – Black", "category": "Hair Dryers"}, {"image": "images/Parlux-Alyon-2250w-Turquoise.jpg", "name": "Parlux Alyon 2250W – Turquoise", "category": "Hair Dryers"}, {"image": "images/Parlux-Alyon-Graphite.jpg", "name": "Parlux Alyon – Graphite", "category": "Hair Dryers"}, {"image": "images/Parlux-Diffuser-3800.jpg", "name": "Parlux Diffuser 3800", "category": "Accessories"}, {"image": "images/Parlux-Melody-Silencer.jpg", "name": "Parlux Melody Silencer", "category": "Accessories"}, {"image": "images/Parlux-Pink.jpg", "name": "Parlux Alyon – Pink", "category": "Hair Dryers"}, {"image": "images/Wahl-100-Year-Anniversary.jpg", "name": "Wahl 100-Year Anniversary Clipper", "category": "Clippers"}, {"image": "images/Wahl-Bella-cordless.jpg", "name": "Wahl Bella Cordless Clipper", "category": "Clippers"}, {"image": "images/Wahl-Bellina-Cordless-Clipper-Grey.jpg", "name": "Wahl Bellina Cordless Clipper – Grey", "category": "Clippers"}];
+
+const grid = document.getElementById('productGrid');
+const filters = document.getElementById('filters');
+const categories = ['All', ...new Set(products.map(p => p.category))];
+
+function waLink(productName) {
+  const message = encodeURIComponent(
+    `Hi Vela Salon Supply Co., I would like to order/enquire about: ${productName}. Please confirm availability and price.`
+  );
+  return `https://wa.me/27787412314?text=${message}`;
+}
+
+function render(filter='All') {
+  const items = filter === 'All' ? products : products.filter(p => p.category === filter);
+  grid.innerHTML = items.map(p => `
+    <article class="product">
+      <div class="product-media"><img src="${p.image}" alt="${p.name}" loading="lazy"></div>
+      <div class="product-body">
+        <div class="tag">${p.category}</div>
+        <h3>${p.name}</h3>
+        <p>Professional salon product. Contact us for current price and availability.</p>
+        <a class="order-btn" href="${waLink(p.name)}" target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+    </article>
+  `).join('') || '<div class="empty">No products found in this category.</div>';
+}
+
+filters.innerHTML = categories.map((cat, i) =>
+  `<button class="filter ${i===0 ? 'active':''}" data-filter="${cat}">${cat}</button>`
+).join('');
+
+filters.addEventListener('click', e => {
+  if (!e.target.matches('.filter')) return;
+  document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
+  e.target.classList.add('active');
+  render(e.target.dataset.filter);
+});
+
+render();
+</script>
+</body>
+</html>
